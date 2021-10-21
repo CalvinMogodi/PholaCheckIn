@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="defaultHref"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Monitor myself every day</ion-title>
+  </ion-toolbar>
+ 
+</ion-header>
+
+<ion-content>
+  <div *ngIf="session" class="ion-padding">
+    <h6>You MUST fill in the form below <span style="color: red;">EVERY DAY</span> </h6>
+    <ion-text size="small" color="medium">You will be asked if:</ion-text><br><br>
+    <ion-label>1. You or anyone in your household have:</ion-label>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>Any of these<br> symptoms:</ion-col>
+        <ion-col col-6>WITH OR WITHOUT<br>these other symptoms</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <ion-text size="small" color="medium">
+            Fever of 38 or more<br>
+            Cough<br>
+            Sore Throat<br>
+            Loss of sense of smell or teast<br>
+            Shortness of breath</ion-text>
+        </ion-col>
+        <ion-col col-6>
+          <ion-text size="small" color="medium">
+            Weakness<br>
+            Muscle Pain<br>
+            Diarrhea
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-text size="small" color="medium">Or:</ion-text><br><br>
+    <ion-label>2. You you recently been in close contuct with a person who has confirmed COVID-19</ion-label><br><br>
+    <ion-label>A high risk close contact is someone who was within 2 meters (for at last 15 minutes) of a person with COVID-19 and not wearing approprite PPE</ion-label>
+    <br><br>
+    <ion-label>If it is medical emergency you should immediately call EMS</ion-label>
+  </div>
+ 
+
+  <ion-list>
+    <ion-item>
+      <ion-icon size="small" name="document" item-start color="primary"></ion-icon>
+      <ion-label style="margin-left: 10pt;" color="primary">WeCare Daily Form</ion-label>
+      <ion-icon name="chevron-forward" color="primary" size="small" item-end></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-icon size="small" name="card" item-start color="primary"></ion-icon>
+      <ion-label style="margin-left: 10pt;" color="primary">We Card</ion-label>
+      <ion-icon name="chevron-forward" color="primary" size="small" item-end></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="help-circle" item-start color="primary"></ion-icon>
+      <ion-label style="margin-left: 5pt;" color="primary">What is a close contact?</ion-label>
+      <ion-icon name="chevron-forward" color="primary" size="small" item-end></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  
+</ion-content>
